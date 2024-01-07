@@ -1,0 +1,12 @@
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+.list-group-item:hover {
+    z-index: 1;
+    outline: 3px solid rgb(192, 0, 199);
+}
