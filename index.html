@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/header.css" />
+    <script src="js/data.js" defer></script>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="p-3 mb-3 border-bottom container border-dark">
@@ -27,8 +29,8 @@
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
           <a
-            href="/"
-            class="logo-text me-4 d-flex align-items-center mb-2 mb-lg-0 text-decoration-none"
+            href="#"
+            class="logo-text me-lg-4 d-flex align-items-center mb-2 mb-lg-0 text-decoration-none"
           >
             Музыка🎶
           </a>
@@ -44,7 +46,7 @@
           </ul>
 
           <form
-            class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-auto ms-4"
+            class="col-12 col-lg-auto mb-3 mb-lg-0 me-xl-auto me-md-0 ms-4 border-bottom"
             role="search"
           >
             <input
@@ -54,30 +56,31 @@
               aria-label="Search"
             />
           </form>
-
-          <span class="badge-plus badge rounded-pill bg-secondary me-4"
-            >ПРЕМИУМ</span
-          >
-
-          <div class="dropdown text-end">
-            <a
-              href="#"
-              class="d-block link-dark text-decoration-none"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+          <div class="d-flex justify-content-end align-items-center ms-md-auto">
+            <span class="badge-plus badge rounded-pill bg-secondary me-4"
+              >ПРЕМИУМ</span
             >
-              <img
-                src="https://github.com/mdo.png"
-                alt="mdo"
-                width="48"
-                height="48"
-                class="rounded-circle"
-              />
-            </a>
-            <ul class="dropdown-menu text-small">
-              <li><a class="dropdown-item" href="#">Профиль</a></li>
-              <li><a class="dropdown-item" href="#">Выйти</a></li>
-            </ul>
+
+            <div class="dropdown text-end">
+              <a
+                href="#"
+                class="d-block link-dark text-decoration-none"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/logo.jpg"
+                  alt="mdo"
+                  width="48"
+                  height="48"
+                  class="rounded-circle"
+                />
+              </a>
+              <ul class="dropdown-menu text-small">
+                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                <li><a class="dropdown-item" href="#">Выйти</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -86,81 +89,16 @@
     <main class="container">
       <h1 class="my-4"><a href="#"></a>Лучшая музыка❤</h1>
       <!--albums-->
-      <div class="albums row">
-        <!--layout-->
-        <div class="col-3">
-          <!--card-->
-          <div class="card">
-            <img src="assets/1.png" alt="album-cover" class="card-image-top" />
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <a href="album.html">
-                  <p class="card-text album-title">POX VAWË</p>
-                </a>
-                <span class="e-mark">🅴</span>
-              </div>
-              <p class="author">Og Buda</p>
-              <p class="year">2023</p>
-            </div>
-          </div>
-        </div>
+      <div class="albums row"></div>
 
-        <!--layout-->
-        <div class="col-3">
-          <!--card-->
-          <div class="card">
-            <img src="assets/2.jpg" alt="album-cover" class="card-image-top" />
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <p class="card-text album-title">FREERIO 2</p>
-                <span class="e-mark">🅴</span>
-              </div>
-              <p class="author">Og Buda</p>
-              <p class="year">2022</p>
-            </div>
-          </div>
-        </div>
-
-        <!--layout-->
-        <div class="col-3">
-          <!--card-->
-          <div class="card">
-            <img src="assets/3.png" alt="album-cover" class="card-image-top" />
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <p class="card-text album-title">Dark Lane Demo Tapes</p>
-                <span class="e-mark">🅴</span>
-              </div>
-              <p class="author">Drake</p>
-              <p class="year">2018</p>
-            </div>
-          </div>
-        </div>
-
-        <!--layout-->
-        <div class="col-3">
-          <!--card-->
-          <div class="card">
-            <img src="assets/4.jpg" alt="album-cover" class="card-image-top" />
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <p class="card-text album-title">Скучаю но работаю</p>
-                <span class="e-mark">🅴</span>
-              </div>
-              <p class="author">Og Buda</p>
-              <p class="year">2023</p>
-            </div>
-          </div>
-        </div>
-      </div>
     </main>
 
     <footer
       class="container border-dark d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
     >
-      <p class="col-md-4 mb-0 text-muted">© 2023 Company, Inc</p>
+      <p class="col-md-4 col-6 mb-0 text-muted">© 2023 Company, Inc</p>
 
-      <ul class="nav col-md-4 justify-content-center">
+      <ul class="nav col-md-4 col-6 justify-content-center">
         <li class="nav-item">
           <a href="#" class="nav-link px-2 text-muted"
             >Здесь могла быть ваша реклама</a
@@ -168,8 +106,8 @@
         </li>
       </ul>
       <a
-        href="/"
-        class="logo-text col-md-4 d-flex align-items-center justify-content-end mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+        href="#"
+        class="logo-text col-md-4 col-12 d-flex align-items-center justify-content-center justify-content-md-end mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
       >
         Музыка🎶
       </a>
